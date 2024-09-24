@@ -21,3 +21,8 @@ are stored in `reports/defects/` in corresponding directories.
 
 `artifacts` directory holds all other intermediate testing artifats like reviews' checklists,
 screenshots and such.
+
+### Bug Tracking Notes
+
+- Current bug tracking is just a csv table
+- The ID column should be used/mentioned when creating issues in tested application repository.
