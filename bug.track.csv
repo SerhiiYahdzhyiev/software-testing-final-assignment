@@ -1,0 +1,10 @@
+ID,TEST_CASE,SEVIRITY,STATE,DESCRIPTION
+1,tc001,critical,PENDING,No proper salting mechanism for password hashing.
+2,tc002,critical,PENDING,No token revocation/invalidation mechanism implemented for auth module.
+3,tc006,critical,PENDING,Registration endpoint allows to create ADMIN user.
+4,tc003,moderate,PENDING,User.deliveryAddress field has loose validation rules.
+5,tc027,moderate,PENDING,No mobile or tablet view supported on the frontend.
+6,tc027,moderate,PENDING,No total price displayed in order items on oredrs page.
+7,tc027,low,PENDING,No product details page available on the frontent.
+8,tc027,low,PENDING,Type on the landing page in: Assingnmnet
+9,tc027,low,PENDING,Broken active link styles for header nav-links on orders page.

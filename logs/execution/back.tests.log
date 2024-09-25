@@ -1,0 +1,112 @@
+yarn run v1.22.22
+$ vitest
+
+ DEV  v2.1.0 /home/sy/sy-commerce/back
+
+stdout | __test__/auth.test.ts > Auth
+Connecting...
+
+stdout | __test__/auth.test.ts > Auth > returns 400 on invalid payload
+2024-09-22 15:53:06 error [error.middleware]: Validation error
+
+stdout | __test__/orders.test.ts > Orders
+2024-09-22 15:53:07 info [ProductsController]: Created product with id 66f02143c961f43fe00faacc
+
+stdout | __test__/products.test.ts > Products
+2024-09-22 15:53:07 info [ProductsController]: Created product with id 66f0214308eb9f2bb2462b3f
+
+stdout | __test__/products.test.ts > Products > should not allow creating or modification by unauthorised requests
+2024-09-22 15:53:07 error [error.middleware]: You shall not pass!
+
+stdout | __test__/orders.test.ts > Orders
+2024-09-22 15:53:07 info [OrdersController]: Created order with id 66f02143c961f43fe00faad1
+
+stdout | __test__/products.test.ts > Products > should not allow creating or modification by unauthorised requests
+2024-09-22 15:53:07 error [error.middleware]: You shall not pass!
+
+stdout | __test__/orders.test.ts > Orders > should not allow creating or modification by unauthorised requests
+2024-09-22 15:53:07 error [error.middleware]: You shall not pass!
+
+stdout | __test__/products.test.ts > Products > should create on valid payload and authorized user
+2024-09-22 15:53:07 info [ProductsController]: Created product with id 66f0214308eb9f2bb2462b42
+
+stdout | __test__/orders.test.ts > Orders > should not allow creating or modification by unauthorised requests
+2024-09-22 15:53:07 error [error.middleware]: You shall not pass!
+
+stdout | __test__/products.test.ts > Products > should update on valid payload and authorized user
+2024-09-22 15:53:07 info [ProductsController]: Updated user with id 66f0214308eb9f2bb2462b3f
+
+stdout | __test__/products.test.ts > Products > should allow to get for unauthorized requests
+2024-09-22 15:53:07 info [ProductsController]: Reutrned products list.
+
+stdout | __test__/orders.test.ts > Orders > should create on valid payload and authorized user
+2024-09-22 15:53:07 info [OrdersController]: Created order with id 66f02143c961f43fe00faad6
+
+stdout | __test__/products.test.ts > Products > should allow to get for unauthorized requests
+2024-09-22 15:53:07 info [ProductsController]: Reutrned product with id 66f0214308eb9f2bb2462b3f
+
+stdout | __test__/orders.test.ts > Orders > should update on valid payload and authorized user
+2024-09-22 15:53:07 info [OrdersController]: Updated Order with id: 66f02143c961f43fe00faad1.
+
+stdout | __test__/orders.test.ts > Orders > should not allow to get for unauthorized requests
+2024-09-22 15:53:07 error [error.middleware]: You shall not pass!
+
+stdout | __test__/orders.test.ts > Orders > should not allow to get for unauthorized requests
+2024-09-22 15:53:07 error [error.middleware]: You shall not pass!
+
+stdout | __test__/orders.test.ts > Orders > should allow get for authorized requests
+2024-09-22 15:53:07 info [OrdersController]: Returned order with id 66f02143c961f43fe00faad1
+
+ ✓ __test__/products.test.ts  (4 tests) 2072ms
+ ✓ __test__/orders.test.ts  (5 tests) 2094ms
+stdout | __test__/users.test.ts > Users > should not allow creating or modification by unauthorised requests
+2024-09-22 15:53:07 error [error.middleware]: You shall not pass!
+
+stdout | __test__/users.test.ts > Users > should not allow creating or modification by unauthorised requests
+2024-09-22 15:53:07 error [error.middleware]: You shall not pass!
+
+stdout | __test__/users.test.ts > Users > should create on valid payload and authorized user
+2024-09-22 15:53:08 info [UsersController]: Created user with id 66f0214393ce428583e4c6e9
+
+stdout | __test__/users.test.ts > Users > should update on valid payload and authorized user
+2024-09-22 15:53:08 info [UsersController]: Updated user with id 66f0214193ce428583e4c6e3
+
+stdout | __test__/users.test.ts > Users > should not allow to get at all for unauthorized requests
+2024-09-22 15:53:08 error [error.middleware]: You shall not pass!
+
+stdout | __test__/users.test.ts > Users > should not allow to get at all for unauthorized requests
+2024-09-22 15:53:08 error [error.middleware]: You shall not pass!
+
+stdout | __test__/users.test.ts > Users > should get all on valid payload and authorized user
+2024-09-22 15:53:08 info [UsersController]: Returned users
+
+stdout | __test__/users.test.ts > Users > should get one on valid payload and authorized user
+2024-09-22 15:53:08 info [UsersController]: Returned users
+
+ ✓ __test__/users.test.ts  (6 tests) 2945ms
+stdout | __test__/auth.test.ts > Auth > should return non 204 on wrong credentials...
+2024-09-22 15:53:10 error [error.middleware]: Invalid email or password!
+
+stdout | __test__/auth.test.ts > Auth > should return non 204 on wrong credentials...
+2024-09-22 15:53:10 error [error.middleware]: User with email "invalid@mail.com" was not found!
+
+stdout | __test__/auth.test.ts > Auth
+Closing...
+
+ ❯ __test__/auth.test.ts  (7 tests | 2 failed) 8264ms
+   × Auth > returns error status on trying to create ADMIN account
+     → expected 200 not to be 200 // Object.is equality
+   × Auth > should remove token in set-cookie on successful logout
+     → expected 'token=s%3A.%2BeZuF5tnR65UEI%2BC%2BK3o…' to be 'token=' // Object.is equality
+
+ Test Files  1 failed | 3 passed (4)
+      Tests  2 failed | 20 passed (22)
+   Start at  15:53:04
+   Duration  9.11s (transform 246ms, setup 0ms, collect 2.58s, tests 15.37s, environment 1ms, prepare 304ms)
+
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+Cancelling test run. Press CTRL+c again to exit forcefully.
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
